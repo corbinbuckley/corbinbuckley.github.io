@@ -6,9 +6,25 @@
     line-height: 1.5em;
 }
 
+.navbar {
+    margin: 0 5px;
+}
+
 header {
     margin: 0 auto;
     max-width: 500px;
-    background-color: dimgray;
+    
+    text-align: center;
 
+}
+
+nav {
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: .5px;
+    
+}
+
+img {
+    margin: 5px;
 }
