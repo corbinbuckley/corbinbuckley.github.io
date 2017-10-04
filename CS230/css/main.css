@@ -9,18 +9,18 @@ body {
 }
 
 h1 {
-    font-size: 36px;
-    color: black;
+    font-size: 2em;
+    text-align: center;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
 
-header, main, footer {
+header, main, footer, nav {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 600px; /* xxxpx (px = pixel is a unit of measure)  */
