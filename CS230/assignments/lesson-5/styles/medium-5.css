@@ -1,9 +1,40 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+   
+    nav {
+        width: 100%;
+    }
+
     nav button {
         display: none;
     }
     /* hamburger button does not need to be shown */
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: skyblue;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav ul li.active a {}
+
+    nav ul li a:hover {
+        background-color: lightblue;
+    }
     section.forecast {
         display: ???;
     }
