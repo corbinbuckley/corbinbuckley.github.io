@@ -35,6 +35,20 @@
     nav ul li a:hover {
         background-color: lightblue;
     }
+    main figure {
+        width: 45%;
+        float: left; 
+        height: inherit;
+        margin: 5px;
+        
+    }
+    
+    }
+    section .current {
+        float: left;
+        width: 54%;
+         
+    }
     section.forecast {
         display: ???;
     }

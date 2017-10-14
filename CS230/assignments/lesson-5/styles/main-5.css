@@ -117,10 +117,14 @@ h3{
 }
 
 .highlow {
-    text-align: left;
 }
 .current {
+    width: 70%;
+}
 
+.weather {
+    width: 50%;
+    float: left;
 }
 section {}
 
