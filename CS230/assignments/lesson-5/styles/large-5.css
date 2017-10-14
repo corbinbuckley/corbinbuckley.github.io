@@ -3,5 +3,68 @@
     article p.town-article img {
         width: 29.333%;
     }
+    main figure {
+        width: 100%;
+        float: left;
+        height: 200px;
+        padding: 0 10px;
+
+    }
+    main section.current {
+        width: 100%
+    }
+    h3 {
+        text-align: center;
+        font-size: 22px;
+        
+    }
+
+    main section h3 {
+        margin-top: 10px;
+    }
+
+    .current {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    .condition {
+        padding: 0 1em 0 0;
+        text-align: right;
+        width: 100%;
+        float: left;
+    }
+    .weather {
+        padding: 0 0 0 1em;
+        text-align: left;
+        width: 100%;
+        float: left;
+    }
+
+    .highlow {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .high {
+        width: 50%;
+        float: left;
+    }
+    .low {
+        width: 50%;
+        float: left;
+    }
+    .conditions {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .conditions {
+        text-align: center;
+    }
+
+    section {
+        display: inline-block;
+    }
 
 }
