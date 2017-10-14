@@ -20,6 +20,8 @@ footer {
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     max-width: 900px;
     margin: 0 auto;
+    padding: 5px 0;
+    
 }
 
 header {
@@ -89,19 +91,27 @@ nav ul li a:hover {
     background-color: lightblue;
 }
 
-main {}
+main {
+    padding: 0 1em;
+}
 
 main h2 {
     font-size: 30px;
 }
 
 main figure {
-    margin: 0 0 .2rem 2%;
-    width: 96%;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    
 }
 
 main figure img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    
 }
 
 section {}
@@ -113,11 +123,20 @@ article p.town-article img {
     margin: ???;
 }
 
-footer {}
+footer {
+    background-color: skyblue;
+    text-align: center;
+    padding-bottom: 20px;
+}
 
-footer aside {}
+footer aside {
+    margin: 0 10px;
 
-footer > p {}
+}
+
+footer > p {
+    margin: 0 10px;
+}
 
 /* This structure refers to p elements that are direct children of the footer element */
 
