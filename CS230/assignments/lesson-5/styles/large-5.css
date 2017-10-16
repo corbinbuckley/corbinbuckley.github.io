@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1020px) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
     article p.town-article img {
         width: 29.333%;
@@ -10,57 +10,38 @@
         padding: 0 10px;
 
     }
-    main section.current {
-        width: 100%
+    .current {
+        width: 33%;
+        float: left;
     }
+    
     h3 {
         text-align: center;
         font-size: 22px;
         
     }
 
-    main section h3 {
-        margin-top: 10px;
-    }
-
-    .current {
+    .summary {
+        width: 100%;
         margin: 0 auto;
-        width: 100%;
     }
 
-
-    .condition {
-        padding: 0 1em 0 0;
-        text-align: right;
-        width: 100%;
-        float: left;
-    }
-    .weather {
-        padding: 0 0 0 1em;
-        text-align: left;
-        width: 100%;
-        float: left;
+    main section h3 {
+        margin-top: inherit;
     }
 
     .highlow {
         margin: 0 auto;
-        width: 100%;
+        width: 30%;
+        float: left;
+    
     }
 
-    .high {
-        width: 50%;
-        float: left;
-    }
-    .low {
-        width: 50%;
-        float: left;
-    }
-    .conditions {
-        width: 100%;
-        margin: 0 auto;
-    }
+    
     .conditions {
         text-align: center;
+        width: 33.33%;
+        float: left;
     }
 
     section {

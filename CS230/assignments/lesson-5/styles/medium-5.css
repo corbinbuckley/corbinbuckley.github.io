@@ -1,5 +1,8 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 650px) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    .container {
+        width: 650px;
+    }
     nav {
         width: 100%;
     }
@@ -33,6 +36,9 @@
     nav ul li a:hover {
         background-color: lightblue;
     }
+    .row1 {
+        overflow: auto;
+    }
     main figure {
         width: 50%;
         float: left;
@@ -43,35 +49,37 @@
     main section h3 {
         margin-top: 0px;
     }
-    
-    main section.current {
-        width: 50%
-    }
-    .row {
-        margin: 0 auto;
+    main picture img {
         width: 50%;
+        max-width: 80px;
     }
-}
+    .summary {
+        width: 50%;
+        float: left;
+       
+    }
     
+    .current {
+        width: 50%;
+        float: left;
+    }
+   
+    .highlow {
+        width: 50%; 
+        float: left;
+    }
 
-}
+    section.forecast {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
 
-.current {
-    margin: 10px;
-
-}
-
-section.forecast {
-    display: ???;
-}
-
-/* show the 10-day forecast with the medium view and up */
-
-article p.town-article img {
-    width: 62.666%;
-    float: right;
+    /* show the 10-day forecast with the medium view and up */
+    article p.town-article img {
+        width: 62.666%;
+        float: right;
+    }
 }
 
 /* responsive images */
-
-}

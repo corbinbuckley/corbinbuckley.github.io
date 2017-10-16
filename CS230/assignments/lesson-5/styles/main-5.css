@@ -23,6 +23,10 @@ footer {
     padding: 5px 0;
     
 }
+nav ul {
+    
+}
+
 
 header {
     width: 100%;
@@ -120,50 +124,30 @@ h3{
     text-align: center;
     font-size: 22px;
 }
-
+.summary {
+    text-align: center;
+}
 
 .current {
     margin: 0 auto; 
-    width: 100%;
+    width: 50%;
 }
 
-
-.condition {
-    padding: 0 1em 0 0;
-    text-align: right;
-    width: 50%;
-    float: left;
-}
-.weather {
-    padding: 0 0 0 1em;
-    text-align: left;
-    width: 50%;
-    float: left;
-}
 
 .highlow {
     margin: 0 auto;
     width: 50%;
 }
 
-.high {
-    width: 50%;
-    float: left;
-}
-.low {
-    width: 50%;
-    float: left;
-}
-.conditions {
-    width: 100%;
+.conditions{
+    text-align: center; 
+     width: 50%;
     margin: 0 auto;
 }
-.conditions{
-    text-align: center;   
-}
 
-section {
-    display: inline-block;
+
+.forecast {
+    display: none;
 }
 
 article p.town-article img {
