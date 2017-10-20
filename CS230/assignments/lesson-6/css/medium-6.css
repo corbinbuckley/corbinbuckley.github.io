@@ -1,0 +1,85 @@
+@media only screen and (min-width: 650px) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    .container {
+        width: 650px;
+    }
+    nav {
+        width: 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: skyblue;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav ul li.active a {}
+
+    nav ul li a:hover {
+        background-color: lightblue;
+    }
+    .row1 {
+        overflow: auto;
+    }
+    main figure {
+        width: 50%;
+        float: left;
+        height: inherit;
+        padding: 0 10px;
+
+    }
+    main section h3 {
+        margin-top: 0px;
+    }
+    main picture img {
+        width: 50%;
+        max-width: 80px;
+    }
+    .summary {
+        width: 50%;
+        float: left;
+       
+    }
+    
+    .current {
+        width: 50%;
+        float: left;
+    }
+   
+    .highlow {
+        width: 50%; 
+        float: left;
+    }
+
+    section.forecast {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* show the 10-day forecast with the medium view and up */
+    article p.town-article img {
+        width: 62.666%;
+        float: right;
+    }
+}
+
+/* responsive images */

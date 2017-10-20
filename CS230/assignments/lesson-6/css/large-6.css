@@ -1,0 +1,51 @@
+@media only screen and (min-width: 1020px) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    article p.town-article img {
+        width: 29.333%;
+    }
+    main figure {
+        width: 100%;
+        float: left;
+        height: 200px;
+        padding: 0 10px;
+
+    }
+    .current {
+        width: 33%;
+        float: left;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 22px;
+        
+    }
+
+    .summary {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main section h3 {
+        margin-top: inherit;
+    }
+
+    .highlow {
+        margin: 0 auto;
+        width: 30%;
+        float: left;
+    
+    }
+
+    
+    .conditions {
+        text-align: center;
+        width: 33.33%;
+        float: left;
+    }
+
+    section {
+        display: inline-block;
+    }
+
+}

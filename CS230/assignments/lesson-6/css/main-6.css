@@ -1,0 +1,177 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
+    font-family: 'Lora', serif;
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5px 0;
+    
+}
+nav ul {
+    
+}
+
+
+header {
+    width: 100%;
+    overflow: auto;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    width: 80%;
+    float: left;
+}
+
+header img {
+    width: 20%;
+    max-width: 100px;
+    min-width: 50px;
+    float: left;
+
+
+
+}
+
+header .subheading {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+
+
+
+}
+
+nav {
+    width: 100%;
+}
+
+nav button {}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: skyblue;
+
+}
+
+nav ul li {}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0px 0;
+    text-decoration: none;
+}
+
+nav ul li.active a {}
+
+nav ul li a:hover {
+    background-color: lightblue;
+}
+
+main {
+    padding: 0 1em;
+    width: 100%;
+}
+
+main h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+main figure {
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    display: inline-block;
+    
+}
+
+main figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+
+}
+h3{
+    text-align: center;
+    font-size: 22px;
+}
+.summary {
+    text-align: center;
+}
+
+.current {
+    margin: 0 auto; 
+    width: 50%;
+}
+
+
+.highlow {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.conditions{
+    text-align: center; 
+     width: 50%;
+    margin: 0 auto;
+}
+
+
+.forecast {
+    display: none;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;
+    /* fill the page in the small/phone view */
+    margin: 0 auto;
+}
+
+footer {
+    background-color: skyblue;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer aside {
+    margin: 0 10px;
+
+}
+
+footer > p {
+    margin: 0 10px;
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
