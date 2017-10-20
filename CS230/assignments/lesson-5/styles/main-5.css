@@ -152,9 +152,9 @@ h3{
 
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: ???;
+    width: 100%;
     /* fill the page in the small/phone view */
-    margin: ???;
+    margin: 0 auto;
 }
 
 footer {
