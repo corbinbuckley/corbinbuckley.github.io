@@ -64,19 +64,38 @@ header .subheading {
 
 nav {
     width: 100%;
+    
 }
 
-nav button {}
+nav button {
+   display: block;
+}
 
-nav ul {
-    text-align: center;
+
+.navigation { list-style: none; padding-left: 0;
+}
+.navigation li { display: none; }
+
+@media only screen and (max-width: 37.5em) {
+	.navigation.responsive {
+        position: relative;
+    }
+	.navigation.responsive li {
+        display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: skyblue;
-
+    }
+	.navigation.responsive li a {
+        padding: 1rem; text-align: center;	display: block; text-decoration:none;
+    }
+	.navigation.responsive li a:hover {
+        background-color: lightblue;
+    }
 }
+
 
 nav ul li {}
 
@@ -89,7 +108,9 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li.active a {}
+nav ul li.active a {
+    
+}
 
 nav ul li a:hover {
     background-color: lightblue;

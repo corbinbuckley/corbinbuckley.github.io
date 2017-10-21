@@ -11,16 +11,20 @@
         display: none;
     }
     /* hamburger button does not need to be shown */
+    
+    .navigation li { display: block; }
+    
     nav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: skyblue;
+        display: block;
     }
 
     nav ul li {
-        float: left;
+        float: left;    
     }
 
     nav ul li a {
