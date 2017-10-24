@@ -12,24 +12,26 @@
     <!-- Google API font reference -->
     <link href="/CS230/css/normalize.css" rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
-    <link href="css/main-6.css" rel="stylesheet">
+    <link href="css/main-7.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
-    <link href="css/medium-6.css" rel="stylesheet">
+    <link href="css/medium-7.css" rel="stylesheet">
     <!-- medium/tablet views -->
-    <link href="css/large-6.css" rel="stylesheet">
+    <link href="css/large-7.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
 </head>
 
-<body>
+<body class="wrapper">
 
-    <header>
+    <header class="header">
+        <div class="container">
         <img src="images/forecaweather-logo.png" alt="The site logo">
         <h1>Aboveground Weather</h1>
+        </div>
         <div class="subheading">Because thats where we live</div>
     </header>
 
     <!-- site navigation use placeholder references -->
-    <nav>
+    <nav class="nav">
         <button onclick="toggleNavMenu()">&#9776;</button>
         <ul class="navigation">
             <li><a href="#">Home</a></li>
@@ -41,8 +43,10 @@
         </ul>
     </nav>
 
-    <main>
-        <h2>The City of Franklin</h2>
+    <main class="main">
+        <div class="container">
+            <h2>The City of Franklin</h2>
+        </div>
         <div class="row1">
             <figure>
                 <img src="images/franklin-medium.jpeg" alt="Scenic picture" sizes="100vw" srcset="images/franklin-small.jpeg 649w,
@@ -67,10 +71,14 @@
                     <p>Wind Speed:</p>
                 </div>
             </section>
+                
         </div>
 
         <section class="forecast">
-            <h3>10 Day Forecast</h3>
+            
+                <h3>10 Day Forecast</h3>
+            
+            <div class="row1">
             <table>
                 <thead>
                     <tr>
@@ -101,10 +109,12 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
+            
         </section>
 
         <article>
-            <h3>Franklin Breaks Record</h3>
+            <h3 class="container">Franklin Breaks Record</h3>
             <p class="town-article">
                 <img src="images/#" alt="" width="100" height="100"> short article content placeholder
             </p>
@@ -112,7 +122,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <aside>
             Contact information placeholder
         </aside>
