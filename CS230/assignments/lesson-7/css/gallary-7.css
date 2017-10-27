@@ -1,6 +1,7 @@
 .header {
     border: 1px solid red;
     display: grid;
+    padding: 1em;
 
 
 }
@@ -12,10 +13,17 @@ header .container {
     grid-column-gap: 1em;
 
 }
+.subheading {
+    display: grid;
+    grid-template: 1fr;
+    text-align: center;
+    
+}
 
 .nav {
     border: 1px solid green;
     display: grid;
+    
 }
 
 
@@ -41,11 +49,23 @@ nav ul li a:hover {
 }
 
 .wrapper {
-    border: 2px solid red;
+    border: 2px dashed red;
     display: grid;
     grid-template-columns: 1fr;
+    padding: 1em;
+}
+.wrapper div {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+.wrapper div a {
+    padding: 5px;
+    max-width: 400px;
 }
 
+.wrapper div img:hover {
+    box-shadow: 5px 5px 10px gray;
+}
 footer {
     background-color: skyblue;
     text-align: center;
@@ -54,11 +74,10 @@ footer {
 
 
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 860px) {
     nav ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
         overflow: hidden;
         background-color: skyblue;
         justify-content: space-around;
@@ -88,7 +107,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1288px) {
     .wrapper {
         border: 2px solid green;
         display: grid;
