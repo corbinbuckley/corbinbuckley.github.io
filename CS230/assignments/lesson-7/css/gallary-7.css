@@ -13,7 +13,7 @@ header .container {
 
 .subheading {
     display: grid;
-    grid-template: 1fr;
+    grid-template-columns: 1fr;
     text-align: center;
 
 }
@@ -131,3 +131,4 @@ footer {
 
 
     }
+}
