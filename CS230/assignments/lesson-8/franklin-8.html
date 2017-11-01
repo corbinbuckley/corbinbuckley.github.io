@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Franklin City</title>
+    <meta name="description" content="page description placeholder">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <meta name="author" content="Your Name Here">
+    
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="/CS230/css/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="css/main-7.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="css/medium-7.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="css/large-7.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body class="wrapper">
+
+    <header class="header">
+        <div class="container">
+        <img src="images/forecaweather-logo.png" alt="The site logo">
+        <h1>Aboveground Weather</h1>
+        </div>
+        <div class="subheading">Because thats where we live</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav class="nav">
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="https://corbinbuckley.github.io/CS230/assignments/lesson-7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <h2>The City of Franklin</h2>
+        </div>
+        <div class="row1">
+            <figure>
+                <img src="images/franklin-medium.jpeg" alt="Scenic picture" sizes="100vw" srcset="images/franklin-small.jpeg 649w,
+                              images/franklin-medium.jpeg 1019w,
+                              images/franklin-large.jpeg 2000w">
+            </figure>
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <div class="current">
+                    Sunny
+                    <picture>
+                        <img src="images/sun.png" alt="Sun" width="50" height="50">
+                    </picture>
+                </div>
+                <div class="highlow">
+                    <p>High:</p>
+                    <p>Low:</p>
+                </div>
+
+                <div class="conditions">
+                    <p>Precipitation:</p>
+                    <p>Wind Speed:</p>
+                    <p>Wind Chill: <span id="windchill">Current Date Placeholder</span></p> 
+                </div>
+            </section>
+                
+        </div>
+
+        <section class="forecast">
+            
+                <h3>10 Day Forecast</h3>
+            
+            <div class="row1">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            
+        </section>
+
+        <article>
+            <h3 class="container">Franklin Breaks Record</h3>
+            <p class="town-article">
+                <img src="images/#" alt="" width="100" height="100"> short article content placeholder
+            </p>
+        </article>
+
+    </main>
+
+    <footer class="footer">
+        <aside>
+            Contact information placeholder
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
+    
+
+</body>
+
+</html>
