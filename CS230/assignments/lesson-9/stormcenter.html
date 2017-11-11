@@ -10,6 +10,8 @@
     <!-- medium/tablet views -->
     <link href="css/large-7.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
+    <link href="css/form.css" rel="stylesheet">
+    
 </head>
 
 <body class="wrapper">
@@ -27,8 +29,10 @@
         <div class="container">
             <h2>Storm Center</h2>
         </div>
-        <div class="container">
+        <div class="wrapper">
             <form action="thanks.html">
+                <div class="container">
+                <div class="personal">
                 <label>Full Name: 
             <input type="text" name="fullName" required pattern="[A-Za-z]{5,}"></label>
                 <label>Email 
@@ -40,6 +44,8 @@
                 <label>Zip Code
                     <input type="number" name="zipCode" required>
                 </label>
+                </div>
+                <div class="stormInfo">
                 <label>Storm Date
                     <input type="date" name="stormDate">
                 </label>
@@ -64,7 +70,10 @@
                         <option value="Springfield">Springfield</option>
                     </select> 
                 </label>
-                <label>User in-danger level 
+                </div>
+                </div>
+                <div class="userInfo">
+                <label>User in-danger level <br>
                     <input type="radio" name="danger" value="yes">Yes
                     <input type="radio" name="danger" value="maybe">Maybe
                     <input type="radio" name="danger" value="no">No
@@ -73,9 +82,10 @@
                     <br>
                     <textarea name="comments "></textarea>
                 </label>
-
+                </div>
+                <div class="submit">
                 <input type="submit" value="Submit">
-
+                </div>
             </form>
 
         </div>
