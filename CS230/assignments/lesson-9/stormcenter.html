@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en-us">
 
-<head w3-include-html= "modules/head.html">
+<head w3-include-html="modules/head.html">
     <title>Storm Center</title>
     <meta name="description" content="page description placeholder">
-     <link href="css/main-7.css" rel="stylesheet">
+    <link href="css/main-7.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
     <link href="css/medium-7.css" rel="stylesheet">
     <!-- medium/tablet views -->
@@ -14,31 +14,86 @@
 
 <body class="wrapper">
 
-    <header class="header" w3-include-html= "modules/header.html">
-        
+    <header class="header" w3-include-html="modules/header.html">
+
     </header>
 
     <!-- site navigation use placeholder references -->
-    <nav class="nav" w3-include-html= "modules/nav.html">
-        
+    <nav class="nav" w3-include-html="modules/nav.html">
+
     </nav>
 
     <main class="main">
-        Form
+        <div class="container">
+            <h2>Storm Center</h2>
+        </div>
+        <div class="container">
+            <form>
+                <label>Full Name: 
+            <input type="text" name="fullName" required pattern="[A-Za-z]{5,}"></label>
+                <label>Email 
+                    <input type="text" name="email" placeholder="example@.com">
+                </label>
+                <label>Phone number
+                    <input type="tel" name="phoneNumber" required> 
+                </label>
+                <label>Zip Code
+                    <input type="number" name="zipCode" required>
+                </label>
+                <label>Storm Date
+                    <input type="date" name="stormDate">
+                </label>
+                <label>Storm Type
+                    <input list="stormType" name="stormType">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">    
+                    </datalist>
+                </label>
+                <label>Storm severity (1-10)
+                    <input type="range" name="stormSeverity" step="1" min="1" max="10"> 
+                </label>
+                <label>Storm Region
+                    <select name="stormRegion">
+                        <option value="SelectRegion" disabled >Select Region...</option>
+                        <option value="Franklin">Franklin</option>
+                        <option value="Geenville">Geenville</option>
+                        <option value="Springfield">Springfield</option>
+                    </select> 
+                </label>
+                <label>User in-danger level 
+                    <input type="radio" name="danger" value="yes">Yes
+                    <input type="radio" name="danger" value="maybe">Maybe
+                    <input type="radio" name="danger" value="no">No
+                </label>
+                <label>Additional information or comments
+                    <br>
+                    <textarea name="comments "></textarea>
+                </label>
+
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </div>
+
 
     </main>
 
-    <footer class="footer" w3-include-html= "modules/footer.html">
-        
+    <footer class="footer" w3-include-html="modules/footer.html">
+
     </footer>
-<script src="scripts/currentdate.js"></script>
+    <script src="scripts/currentdate.js"></script>
     <script src="scripts/w3.js"></script>
     <script src="scripts/modularize.js"></script>
     <script src="scripts/hamburger.js"></script>
-    
+
     <script src="scripts/windchill.js"></script>
-    
-    
+
+
 
 </body>
 
