@@ -1,39 +1,110 @@
-* {
-    font-family: 'Ubuntu', sans-serif;
-}
-table {
-    border: 1px solid gray;
+.header,
+.nav,
+.main,
+.footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    flex: 1 100%;
+    
+    
 }
 
-thead tr th:lang(it) {
-    background-color: #7fb9c2;
-    color: black;
+body {
+    font-size: 16px;
+    font-family: 'Lora', serif;
 }
 
-thead tr th {
-    background-color: #628ca6;
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.subheading {
+    display: flex;
+    justify-content: center;
+}
+
+nav button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+}
+.navigation { list-style: none; padding-left: 0;
+}
+.navigation li { display: none; }
+
+@media only screen and (max-width: 37.5em) {
+	.navigation.responsive {
+        position: relative;
+    }
+	.navigation.responsive li {
+        display: flex;
+        justify-content: center;
+    overflow: hidden;
+    background-color: skyblue;
+    }
+	.navigation.responsive li a {
+        padding: 1rem;
+        text-decoration:none;
+    }
+	.navigation.responsive li a:hover {
+        background-color: lightblue;
+    }
+}
+
+nav ul li a {
     color: white;
+    padding: 10px 0;
+    margin: 0px 0;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: lightblue;
 }
 
-tfoot tr td {
-    background-color: #7fb9c2;
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
 }
 
- tbody tr:nth-child(even)  {
-    background-color: #e7ffed;
+
+.summary {
+
+}
+.current {
+    display: flex; 
+    flex-wrap:wrap; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.forecast h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.forecast {
+    
+}
+article {
+    
+}
+.town-article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: skyblue;
     text-align: center;
-}
-
- tbody tr:nth-child(odd)  {
-    background-color: #e7f0ed;
-     text-align: center;
-}
-.active {
-    background-color: #628ca6;
-    color: white;
-}
-
-tfoot tr td:last-of-type {
-    text-align: center;
-    font-size: .5em;
+    padding-bottom: 20px;
 }

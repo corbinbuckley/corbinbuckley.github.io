@@ -1,0 +1,39 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+table {
+    border: 1px solid gray;
+}
+
+thead tr th:lang(it) {
+    background-color: #7fb9c2;
+    color: black;
+}
+
+thead tr th {
+    background-color: #628ca6;
+    color: white;
+}
+
+tfoot tr td {
+    background-color: #7fb9c2;
+}
+
+ tbody tr:nth-child(even)  {
+    background-color: #e7ffed;
+    text-align: center;
+}
+
+ tbody tr:nth-child(odd)  {
+    background-color: #e7f0ed;
+     text-align: center;
+}
+.active {
+    background-color: #628ca6;
+    color: white;
+}
+
+tfoot tr td:last-of-type {
+    text-align: center;
+    font-size: .5em;
+}
