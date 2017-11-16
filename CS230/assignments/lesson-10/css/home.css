@@ -1,0 +1,19 @@
+.story {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+}
+.story article {
+    background-color: aquamarine;
+    justify-content: space-around;
+}
+
+.city {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+}
+
+.city article {
+    background-color: peachpuff;
+}
