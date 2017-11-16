@@ -65,9 +65,13 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover {
-    background-color: lightblue;
+    background: radial-gradient(skyblue, deepskyblue, skyblue);
 }
 
+.active {
+    background: radial-gradient(skyblue, deepskyblue, skyblue);
+
+}
 .row1 {
     display: flex;
     flex-wrap: wrap;
