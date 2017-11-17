@@ -66,11 +66,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: lightblue;
+    background: radial-gradient(skyblue, deepskyblue, skyblue);
 }
 
 .navigation li {
     display: none;
+}
+
+.active {
+    background: radial-gradient(skyblue, deepskyblue, skyblue);
 }
 
 .wrapper {
