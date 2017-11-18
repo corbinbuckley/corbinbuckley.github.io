@@ -1,19 +1,40 @@
 .story {
-    display: flex;
-    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
     background-color: blueviolet;
 }
+
 .story article {
     background-color: aquamarine;
     justify-content: space-around;
 }
 
 .city {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
     background-color: bisque;
 }
 
 .city article {
     background-color: peachpuff;
+}
+.highlow {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@media only screen and (min-width: 650px) {
+    .story {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: blueviolet;
+    }
+    .cities {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
 }

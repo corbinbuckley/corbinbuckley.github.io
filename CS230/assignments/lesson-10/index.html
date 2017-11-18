@@ -4,12 +4,8 @@
 <head w3-include-html="modules/head.html">
     <title>Franklin City</title>
     <meta name="description" content="page description placeholder">
-    <link href="css/main.css" rel="stylesheet">
-    <!-- default styles - small/phone views -->
-    <link href="css/medium.css" rel="stylesheet">
-    <!-- medium/tablet views -->
-    <link href="css/large.css" rel="stylesheet">
-    <!-- large/wide/desktop views -->
+    <link href="css/main2.css" rel="stylesheet">
+
     <link href="css/home.css" rel="stylesheet">
 </head>
 
@@ -26,14 +22,38 @@
 
     <main class="main">
         <div class="container">
-            <div class = "story">
-            <h2>Weather Story</h2>
-                <article>short article content placeholder
+            <div class="story">
+                <h2>Weather Story</h2>
+                <article>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                 </article>
-        </div>
-            <div class="city">
-                <h3>Franklin</h3>
-                <article> Current weather</article>
+            </div>
+            <div class="cities">
+                <div class="city">
+                    <h3>Franklin</h3>
+                    <article>
+                        <section class="summary">
+                            <div class="current">
+                                Sunny
+                                <picture>
+                                    <img src="images/sun.png" alt="Sun" width="50" height="50">
+                                </picture>
+                            </div>
+                            <div class="highlow">
+                                <p>High:</p>
+                                <p>Low:</p>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <div class="city">
+                    <h3>Greenvile</h3>
+                    <article> Current weather</article>
+                </div>
+                <div class="city">
+                    <h3>Srpingfield</h3>
+                    <article> Current weather</article>
+                </div>
+
             </div>
         </div>
 
@@ -43,7 +63,7 @@
 
     </footer>
     <script src="scripts/currentdate.js"></script>
-    <script src  ="scripts/makeActive.js"></script>
+    <script src="scripts/makeActive.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/w3.js"></script>
