@@ -1,8 +1,8 @@
 w3.includeHTML(function()
                {
+    
     currentDate();
     makeActive();
-    toggleNavMenu();
     windChill();
     
 });
