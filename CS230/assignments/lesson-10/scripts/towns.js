@@ -1,4 +1,12 @@
-var cityName = document.getElementById('cityName');
+
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF = urlArray[urlArray.length - 1];
+
+if (pageHREF == "franklin.html")
+    {
+        var page = "Franklin";
+    }
 
 
 var requestURL = 'https://byui-cit230.github.io/towndata.json';
@@ -9,7 +17,7 @@ request.send();
 request.onload = function () {
     var townData = request.response;
     for (var i = 0; i < townData.towns.length; i++) {
-        if (townData.towns[i].name === "Franklin") {
+        if (townData.towns[i].name === page) {
             document.getElementById("motto").innerHTML = townData.towns[i].motto;
             document.getElementById("yearFounded").innerHTML = townData.towns[i].yearFounded;
             document.getElementById("currentPopulation").innerHTML = townData.towns[i].currentPopulation;
