@@ -2,11 +2,9 @@
     width: 80%;
     margin: 0 auto;
     display: grid;
-    background-color: blueviolet;
 }
 
 .story article {
-    background-color: aquamarine;
     justify-content: space-around;
 }
 
@@ -14,11 +12,12 @@
     display: grid;
     width: 80%;
     margin: 0 auto;
-    background-color: bisque;
+    border: 4px solid deepskyblue;
+
 }
 
 .city article {
-    background-color: peachpuff;
+    
 }
 .highlow {
     display: flex;
@@ -26,11 +25,27 @@
     
 }
 
+@media only screen and (min-width: 440) {
+    .story {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .cities {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .story article {
+        
+    }
+
+}
+
 @media only screen and (min-width: 650px) {
     .story {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: blueviolet;
+        
     }
     .cities {
         display: grid;

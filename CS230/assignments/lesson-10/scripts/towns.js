@@ -7,6 +7,14 @@ if (pageHREF == "franklin.html")
     {
         var page = "Franklin";
     }
+if (pageHREF == "greenville.html")
+    {
+        var page = "Greenville";
+    }
+if (pageHREF == "springfield.html")
+    {
+        var page = "Springfield"
+    }
 
 
 var requestURL = 'https://byui-cit230.github.io/towndata.json';
