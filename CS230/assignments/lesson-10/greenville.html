@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-us">
+
+<head w3-include-html="modules/head.html">
+    <title>Greenville</title>
+    <meta name="description" content="page description placeholder">
+    
+    <link href="css/main2.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    
+    
+</head>
+
+<body class="wrapper">
+
+    <header class="header" w3-include-html="modules/header.html">
+
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav class="nav" w3-include-html="modules/nav.html">
+
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <h2>The City of Greenville</h2>
+            <h3 id="motto"></h3>
+        </div>
+        <div class="row1">
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <div class="current">
+                    Sunny
+                    <picture>
+                        <img src="images/sun.png" alt="Sun" width="50" height="50">
+                    </picture>
+                </div>
+                <div class="highlow">
+                    <p>High:</p>
+                    <p>Low:</p>
+                </div>
+
+                <div class="conditions">
+                    <p>Precipitation:</p>
+                    <p>Wind Speed:</p>
+                    <p>Wind Chill: <span id="windchill">Current Date Placeholder</span></p>
+                </div>
+            </section>
+            <figure>
+                <img src="images/franklin-medium.jpeg" alt="Scenic picture" sizes="100vw" srcset="images/franklin-small.jpeg 649w,
+                              images/franklin-medium.jpeg 1019w,
+                              images/franklin-large.jpeg 2000w">
+            </figure>
+            
+
+        </div>
+
+        <section class="forecast">
+
+            <h3>10 Day Forecast</h3>
+
+            <div class="row1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+        
+        <article>
+            <h3 class="container">Greenville Breaks Record</h3>
+            <p class="town-article">
+                <img src="images/franklin-medium.jpeg" alt="Scenic picture" sizes="100vw" srcset="images/franklin-small.jpeg 649w,
+                              images/franklin-medium.jpeg 1019w,
+                              images/franklin-large.jpeg 2000w">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </article>
+        <section>
+            <article class="container">
+                <p>Year Founded: <span id="yearFounded"></span>
+                </p>
+                <p>Current Population: <span id="currentPopulation"></span></p>
+                <p>Average Rainfall: <span id="averageRainfall"></span></p>
+                <p>Events: </p>
+                <ul id="events"></ul>
+                
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer" w3-include-html="modules/footer.html">
+
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/makeActive.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/towns.js"></script>
+
+
+</body>
+
+</html>
