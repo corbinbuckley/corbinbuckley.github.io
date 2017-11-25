@@ -4,40 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-2.2.1.min.js"></script>
-	<script>
-	$(function(){
-		// jQuery Code goes here
-//        var toggleStyle = function() {
-//            
-//            var inputFields = $('input[type="text"]');
-//            
-//            if( inputFields.css('background-color') === 'rgb(255, 0, 0)') {
-//                // set background to white
-//                inputFields.css('background-color', 'rgb(255, 255, 255)');
-//            } else {
-//                // set background color to red
-//                inputFields.css('background-color', 'rgb(255, 0, 0)');
-//            }
-//        }
-//        $('#ReqAQuoteBtn').click( toggleStyle);
-//        $('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
-//        
-//        $("<li><strong>This is also great !!</strong></li>").prependTo('.coreValues');
-        
-        var  nameVal = $('input[name="nameVal"]');
-        
-        function FillEmpty() {
-            if (nameVal.val() == '') {
-                nameVal.val( 'Johne Doe' );
-            }
-        }
-        $('#ReqAQuoteBtn').click(FillEmpty);
-    
-
-	})
-    
-	</script>
+<!--	<script src="js/jquery-2.2.1.min.js"></script>-->
+	
 </head>
 <body>
 <!-- Master Container Div -->
@@ -130,8 +98,43 @@
 		</div>
 
 		<div class="footer">
-			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+            <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
 		</div>
 	</div>
+     <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+	$(function(){
+		// jQuery Code goes here
+//        var toggleStyle = function() {
+//            
+//            var inputFields = $('input[type="text"]');
+//            
+//            if( inputFields.css('background-color') === 'rgb(255, 0, 0)') {
+//                // set background to white
+//                inputFields.css('background-color', 'rgb(255, 255, 255)');
+//            } else {
+//                // set background color to red
+//                inputFields.css('background-color', 'rgb(255, 0, 0)');
+//            }
+//        }
+//        $('#ReqAQuoteBtn').click( toggleStyle);
+//        $('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
+//        
+//        $("<li><strong>This is also great !!</strong></li>").prependTo('.coreValues');
+        
+        var  nameVal = $('input[name="nameVal"]');
+        
+        function FillEmpty() {
+            if (nameVal.val() == '') {
+                nameVal.val( 'Johne Doe' );
+            }
+        }
+        $('#ReqAQuoteBtn').click(FillEmpty);
+    
+        $('.footer > h5').append(' | ','<a href="animatedMenuBegin.htm">animated Menu</a>', ' | ', '<a href="DropDownMenuBegin.htm">Drop Down Menu</a>', ' | ', '<a href="fruitBasketBegin.htm">Fruit Basket</a>', ' | ', '<a href="InsertHTMLBegin.htm">Insert HTML</a>', ' | ', '<a href="toggleButtonBegin.htm">toggle Button</a>')
+
+	})
+    
+	</script>
 </body>
 </html>
