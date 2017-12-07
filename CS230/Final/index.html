@@ -18,6 +18,11 @@
     nav ul {
         padding: 0;
     }
+    
+    .navigation li {
+        display: none;
+        
+    }
 
     nav ul li {
         text-align: center;
@@ -98,6 +103,9 @@
         background-color: #8FC1E3;
         text-align: center;
     }
+    footer aside {
+        padding-top: .5em;
+    }
 
 
     header .container {
@@ -111,6 +119,7 @@
         display: grid;
         border: dashed red;
         grid-template-columns: 1fr;
+        padding: 1em;  
     }
 
     .description {}
@@ -146,25 +155,11 @@
 </style>
 
 <body>
-    <header>
-        <div class="container">
-            <img src="images/" width="50px" height="50px" style="background-color: blueviolet;">
-            <h1>The Mountain Spoke</h1>
-        </div>
-
+    <header w3-include-html = "modules/header.html">
+        
     </header>
-    <nav>
-        <div class="container">
-            <button onclick="toggleNavMenu()">&#9776;</button>
-            <ul class="navigation" id="mainmenu">
-                <li><a class="" href="index.html">Home</a></li>
-                <li><a href="#">Sales</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Tours</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+    <nav w3-include-html="modules/nav.html">
+        
 
     </nav>
 
@@ -200,21 +195,19 @@
                     <p>Service Description</p>
                 </div>
             </div>
-
-            <div style="background-color: bisque"> Contact us </div>
+            <div class="group">
+                <h3>Contact us </h3> 
+            </div>
         </div>
 
     </main>
-    <footer>
-        <div class="container">
-            <aside>
-                Contact information placeholder
-            </aside>
-            <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
-
-        </div>
+    <footer w3-include-html="modules/footer.html">
+        
     </footer>
-
+    <script src="scripts/currentdate.js"></script>
+    <script src  ="scripts/makeActive.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
 </body>
 </html>
