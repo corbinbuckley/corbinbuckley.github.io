@@ -7,6 +7,73 @@
     <meta name="Contact Us" content="Contact us with questions">
 
 </head>
+    <style>
+        main {
+
+    padding: 1.5em;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+}
+
+form .container {
+
+    display: grid;
+    margin: 0 auto;
+
+    /*
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; 
+    padding: 1em 0;
+*/
+}
+form .userInfo {
+        display: grid;
+        margin: 0 auto;
+}
+
+label input {}
+
+.personal {
+    padding: 0 1em 0 0;
+}
+
+.personal label {
+    display: block;
+    justify-content: space-around;
+    padding: .5em 0;
+
+}
+
+.stormInfo label {
+    display: block;
+    padding: .5em 0;
+}
+
+.userInfo label {
+    display: block;
+    padding: .5em 0;
+}
+
+.submit {}
+
+@media only screen and (min-width: 860px) {
+
+    form .container {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        margin: 0 auto;
+    }
+    form .userInfo {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        margin: 0 auto;
+    }
+}
+    </style>
 
 <body>
     <header w3-include-html="modules/header.html">
@@ -15,9 +82,18 @@
     <nav w3-include-html="modules/nav.html">
     </nav>
     <main>
+        
+        
+        
+        
+        
+        
+
         <div class="container">
             <h2>Contact us</h2>
+        </div>
                 <form action="thanks.html">
+                    <div class="container">
                     <div class="personal">
                         <label for="fullname">Full Name: 
             <input type="text" name="fullName" required pattern="[A-Za-z]{5,}"></label>
@@ -28,26 +104,28 @@
                     <input type="tel" name="phoneNumber"> 
                 </label>
                     </div>
-                    
+                    <div class="stormInfo">
                     <label for="comment">Comments
                         <textarea id="comment" name ="comment" placeholder= "type comments" required style="height:200px"></textarea>
                     </label>
                      <div class="submit">
                 <input type="submit" value="Submit">
                 </div>
-                    
+                    </div>
+                    </div>
                 </form>
             
    
                 
 
-
+<div class="container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.948738839136!2d-111.09298598458018!3d45.67192937910395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345458559cf66a1%3A0x858c0351ba741919!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1512794043635" width="350" height="300" frameborder="0" style="border:0; width:100%; max-width: 350px; order: 1;" allowfullscreen></iframe>
 
                     <div class="description">
                     </div>
 
             </div>
+       
        
 
 

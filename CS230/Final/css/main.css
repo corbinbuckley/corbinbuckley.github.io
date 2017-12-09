@@ -138,6 +138,12 @@ header .container {
     grid-column-gap: 1em;
     justify-content: center;
 }
+header img {
+    margin: auto;
+}
+main img {
+    max-width: inherit;
+}
 
 .group {
     display: grid;
@@ -163,7 +169,7 @@ image {
         grid-column-gap: 1em;
     }
     .group #sales,
-    #service {
+    #service  {
         order: 1
     }
 
