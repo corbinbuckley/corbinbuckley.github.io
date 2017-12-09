@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head w3-include-html="modules/head.html">
+   
+    <title>Registration</title>
+    <meta name="Registration" content="Register for the event">
+    
+</head>
+
+<body>
+    <header w3-include-html = "modules/header.html">
+        
+    </header>
+    <nav w3-include-html="modules/nav.html">
+    </nav>
+    <main>
+         <div class="container">
+             <h2>Registration</h2>
+             <div class="group">
+                 
+                
+                 <div class="description">
+                 </div>
+                 
+             </div> 
+              <form action="thanks.html">
+                    <div class="personal">
+                        <label>Full Name: 
+            <input type="text" name="fullName" required pattern="[A-Za-z]{5,}"></label>
+                        <label>Email 
+                    <input type="text" name="email" placeholder="example@.com">
+                </label>
+                        <label>Phone number
+                    <input type="tel" name="phoneNumber" required> 
+                </label>
+                        <label>Birth Date
+                    <input type="date" name="birthDate">
+                </label>
+                    </div>
+                    <label>State/Counrty
+                        <input type="text" name = "state" required>
+                    </label>
+                    
+                </form>
+        </div>
+        
+    
+    </main>
+
+    
+    <footer w3-include-html="modules/footer.html">
+        
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src  ="scripts/makeActive.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+</body>
+</html>
