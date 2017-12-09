@@ -8,10 +8,153 @@ h1 {
     color: #687864;
 }
 
+.nav {
+        display: grid;
 
+    }
+
+    nav ul {
+        padding: 0;
+    }
+    
+    .navigation li {
+        display: none;
+        
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav button {
+        display: grid;
+        background-color: #8FC1E3;
+
+    }
+
+    nav ul li a {
+        color: white;
+        padding: 10px 0;
+        margin: 0px 0;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background: #5085A5;
+    }
+
+    @media only screen and (max-width: 440px) {
+        .navigation.repsonsive {
+            display: grid;
+        }
+        .navigation.responsive li {
+            display: grid;
+            list-style-type: none;
+            background-color: #8FC1E3;
+        }
+        .navigation.responsive li a {
+            padding: 1rem;
+            text-align: center;
+            text-decoration: none;
+        }
+        .navigation.responsive li a:hover {
+            background-color: #5085A5;
+        }
+    }
+
+    @media only screen and (min-width: 440px) {
+        nav {
+            background-color: #8FC1E3;
+
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        nav button {
+            display: none;
+        }
+        .navigation li {
+            display: grid;
+
+        }
+        .navigation {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 1em;
+        }
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: solid black;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    footer {
+        background-color: #8FC1E3;
+        text-align: center;
+    }
+    footer aside {
+        padding-top: .5em;
+    }
+
+
+    header .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 1em;
+        justify-content: center;
+    }
+
+    .group {
+        display: grid;
+        border: dashed red;
+        grid-template-columns: 1fr;
+        padding: 1em;  
+    }
+
+    .description {}
+
+    image {
+        background-color: aqua;
+    }
+
+ 
+    h3 {
+        background-color: bisque;
+    }
 
 /*tablet width */
+    @media only screen and (min-width: 440px) {
+        .group {
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 1em;
+        }
+        .group #sales,
+        #service {
+            order: 1
+        }
 
 
+    }
 
 /*desktop width */
+    @media only screen and (min-width: 1200px) {
+        .description {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+
+
+
+
+
+
