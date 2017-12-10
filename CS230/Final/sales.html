@@ -5,7 +5,24 @@
     <title>Sales</title>
     <meta name="Bike Sales" content="Bikes for Sale">
     
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+        active: false,
+        collapsible: true, 
+        heightStyle: "content", 
+        icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
+    });
+  } );
+  </script>
 </head>
+    <style>
+        
+    
+        
+    </style>
 
 <body>
     <header w3-include-html = "modules/header.html">
@@ -16,12 +33,58 @@
     <main>
          <div class="container">
              <h2>Sales</h2>
-             <div class="group">
-                
-                 <div class="description">
-                 </div>
+             <div id="accordion">
+  <h3>Farley EX</h3>
                  
-             </div> 
+  <div class = "bike">
+      <div class = "specs">
+      <img src="images/bike1.jpeg">
+      
+      <ul>
+      <li>Price: $5,999</li>
+      <li>Size: 27 in</li>
+      <li>Weight: 17.5" - 28.70 lbs</li>
+    </ul>
+      </div>
+    <p>
+   Transform your trail rides with the unstoppable Farley EX. Claw your way up techy climbs, tame gnarly terrain, and shred rugged lines you previously thought impossible.
+    </p>
+      
+  </div>
+  <h3>Fuel EX</h3>
+  <div class="bike">
+      <div class="specs">
+      <img src="images/bike2.jpeg">
+          <ul>
+      <li>Price: $8,999</li>
+      <li>Size: 29 in</li>
+      <li>Weight: 17.5" - 26.30 lbs</li>
+    </ul>
+      </div>
+      
+    <p>
+        Want a rugged, capable long-travel trail bike with the responsiveness of an XC bike? This is it. Fuel EX blends the best of both worlds in one uncompromising package.
+    
+    </p>
+  </div>
+  <h3>Remedy</h3>
+  <div class="bike">
+      <div class="specs">
+      <img src="images/bike3.jpg">
+           <ul>
+      <li>Price: $4,999</li>
+      <li>Size: 27.5 in</li>
+      <li>Weight: 17.5" - 28.70 lbs</li>
+    </ul>
+      </div>
+    <p>
+        Remedy is the mountain biker's mountain bike. 27.5˝ wheels, an aggressive geometry, and a wealth of technical features make a bike that scores tens for capability.
+    </p>
+    
+  </div>
+  
+</div>
+             
         </div>
         
     
