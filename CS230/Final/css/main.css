@@ -15,6 +15,7 @@ h2 {
     font-family: 'Acme', sans-serif;
     text-align: center;
     color: #5085A5;
+    margin: 0;
 }
 
 h3 {
@@ -121,6 +122,9 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
 }
+main .container {
+    padding: 1em;
+}
 
 footer {
     background-color: #8FC1E3;
@@ -158,6 +162,9 @@ image {
     background-color: aqua;
 }
 
+#accordion h3 {
+    background-color: #8FC1E3;
+}
 
 
 
@@ -172,10 +179,19 @@ image {
     #service  {
         order: 1
     }
+    h2 {
+        font-size: 2.5em;
+    }
 
     h3 {
         font-size: 2em;
     }
+     #accordion  .specs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+            
+        }
+    
 
 
 }
@@ -183,8 +199,13 @@ image {
 /*desktop width */
 
 @media only screen and (min-width: 1200px) {
+    .group {
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 1em;
+    }
     .description {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
+   
 }
