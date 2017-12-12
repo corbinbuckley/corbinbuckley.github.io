@@ -68,6 +68,7 @@ nav ul li a:hover {
 }
 
 
+
 @media only screen and (max-width: 440px) {
     .navigation.repsonsive {
         display: grid;
@@ -149,11 +150,21 @@ main img {
     max-width: inherit;
 }
 
-.group {
+.group, .table {
     display: grid;
     border: dashed red;
     grid-template-columns: 1fr;
     padding: 1em;
+}
+table, th, td {
+            border: 1px solid black;
+        }
+table th {
+    background-color: #8FC1E3;
+}
+
+table {
+    width: 100%;
 }
 
 .description {}
@@ -164,6 +175,22 @@ image {
 
 #accordion h3 {
     background-color: #8FC1E3;
+}
+
+.personal label {
+    display: block;
+    padding: 4px;
+    
+}
+.personal {
+    display: block;
+    float: left;
+}
+textarea {
+    width: 100%;
+}
+.regImg {
+    display: none; 
 }
 
 
@@ -191,6 +218,20 @@ image {
         grid-template-columns: 1fr 1fr;
             
         }
+    .table {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+        
+    }
+    textarea {
+    width: 100%;
+}
+    .regImg {
+      
+        display: none;
+        
+    }
+ 
     
 
 
@@ -207,5 +248,14 @@ image {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
+    .table {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        
+    }
+    .regImg {
+    display: inherit; 
+}
+    
    
 }
