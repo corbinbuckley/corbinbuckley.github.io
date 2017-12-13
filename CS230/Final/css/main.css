@@ -21,7 +21,7 @@ h2 {
 h3 {
     font-family: 'Acme', sans-serif;
     color: #5085A5;
-    background-color: bisque;
+/*    background-color: bisque;*/
 }
 
 main {
@@ -122,7 +122,8 @@ nav ul li a:hover {
 }
 
 .home h3:hover {
-    box-shadow: 5px 5px 10px gray;
+   
+    text-shadow: 5px 5px 10px gray;
 }
 
 .container {
