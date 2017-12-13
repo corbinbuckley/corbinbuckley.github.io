@@ -129,7 +129,7 @@ nav ul li a:hover {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    border: solid black;
+/*    border: solid black;*/
     max-width: 800px;
     margin: 0 auto;
 }
@@ -162,7 +162,7 @@ main img {
 
 .group, .table {
     display: grid;
-    border: dashed red;
+/*    border: dashed red;*/
     grid-template-columns: 1fr;
     padding: 1em;
 }
