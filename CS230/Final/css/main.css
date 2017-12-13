@@ -205,6 +205,7 @@ textarea {
 
 
 
+
 /*tablet width */
 
 @media only screen and (min-width: 440px) {
@@ -241,7 +242,6 @@ textarea {
         display: none;
         
     }
- 
     
 
 
