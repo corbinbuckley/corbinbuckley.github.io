@@ -244,6 +244,13 @@ textarea {
         display: none;
         
     }
+    header .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-column-gap: 1em;
+    justify-content: center;
+    text-align: center;
+}
     
 
 
