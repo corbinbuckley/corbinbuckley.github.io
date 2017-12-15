@@ -215,10 +215,7 @@ textarea {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1em;
     }
-    .group #sales,
-    #service  {
-        order: 1
-    }
+   
     h2 {
         font-size: 2.5em;
     }
