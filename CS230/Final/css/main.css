@@ -211,6 +211,14 @@ textarea {
     display: inline;
     text-decoration: underline;
 }
+.personal {
+    margin-bottom: 2em;
+}
+iframe {
+    border: 0; 
+    width: 100%;
+    order: 1;
+}
 
 
 /*tablet width */
