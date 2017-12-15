@@ -207,6 +207,11 @@ textarea {
     background-color: chartreuse;
 }
 
+.list ul li:first-child{
+    display: inline;
+    text-decoration: underline;
+}
+
 
 /*tablet width */
 
